@@ -2,7 +2,7 @@
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
-i
+
 trigger:
 - main
 
@@ -21,6 +21,6 @@ jobs:
       displayName: 'Run second step which contains multiple lines in job1'
 
   - job: job2
-      steps:
-      - script: echo This is a step job2
-        displayName: 'Run first step in job2'
+    steps: 
+      - script: this is a step in job2
+        displayName: 'Run first step in job1'
