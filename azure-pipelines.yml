@@ -22,5 +22,5 @@ jobs:
 
   - job: job2
     steps: 
-      - script: this is a step in job2
-        displayName: 'Run first step in job1'
+      - script: echo this is a step in job2
+        displayName: 'Run first step in job2'
