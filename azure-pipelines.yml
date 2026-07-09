@@ -11,6 +11,7 @@ pool:
 
 jobs:
   - job: job1
+    dependsOn: job2
     steps:
     - script: echo Hello, world!----updated within job1
       displayName: 'Run first step in job1'
